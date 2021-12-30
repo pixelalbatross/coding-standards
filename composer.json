@@ -21,5 +21,13 @@
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true
     }
+  },
+  "scripts": {
+    "config-cs": [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+      "\"vendor/bin/phpcs\" --config-set default_standard PixelAlbatross"
+    ],
+    "post-install-cmd": "@config-cs",
+    "post-update-cmd": "@config-cs"
   }
 }
