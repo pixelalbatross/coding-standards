@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<ruleset name="PixelAlbatross">
+	<description>Pixel Albatross coding standards.</description>
+
+	<exclude-pattern>*/node_modules/*</exclude-pattern>
+	<exclude-pattern>*/vendor/*</exclude-pattern>
+
+	<arg name="extensions" value="php" />
+
+	<rule ref="PHPCompatibilityWP" />
+
+	<rule ref="WordPress-Docs">
+		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+	</rule>
+
+	<rule ref="WordPress-Core">
+		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
+		<exclude name="WordPress.PHP.DisallowShortTernary" />
+		<exclude name="WordPress.PHP.YodaConditions" />
+	</rule>
+</ruleset>
