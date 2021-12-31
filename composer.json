@@ -1,7 +1,6 @@
 {
   "name": "pixelalbatross/coding-standards",
   "description": "Pixel Albatross Coding Standards",
-  "version": "dev-main",
   "type": "phpcodesniffer-standard",
   "license": "GPL-2.0-or-later",
   "authors": [
