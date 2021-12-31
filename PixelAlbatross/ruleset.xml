@@ -4,18 +4,25 @@
 
 	<exclude-pattern>*/node_modules/*</exclude-pattern>
 	<exclude-pattern>*/vendor/*</exclude-pattern>
+	<exclude-pattern>*/dist/*</exclude-pattern>
 
 	<arg name="extensions" value="php" />
 
 	<rule ref="PHPCompatibilityWP" />
 
 	<rule ref="WordPress-Docs">
+		<exclude name="Squiz.Commenting.FileComment.Missing" />
 		<exclude name="Squiz.Commenting.FileComment.MissingPackageTag" />
+		<exclude name="Squiz.Commenting.ClassComment.Missing" />
 	</rule>
 
 	<rule ref="WordPress-Extra">
 		<exclude name="Generic.Arrays.DisallowShortArraySyntax" />
 		<exclude name="WordPress.PHP.DisallowShortTernary" />
 		<exclude name="WordPress.PHP.YodaConditions" />
+		<exclude name="WordPress.Files.FileName.InvalidClassFileName" />
+		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 	</rule>
+
+	<arg value="ps"/>
 </ruleset>
