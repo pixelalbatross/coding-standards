@@ -24,5 +24,6 @@
 		<exclude name="WordPress.Files.FileName.NotHyphenatedLowercase" />
 	</rule>
 
+	<arg name="colors"/>
 	<arg value="ps"/>
 </ruleset>
